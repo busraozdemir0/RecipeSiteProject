@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Kullanici.master.cs" Inherits="RecipeSiteProject.Kullanici" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+
+        .auto-style2 {
+            width: 133px;
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+
+        .auto-style3 {
+            text-align: center;
+            background-color: #FFFFFF;
+        }
+    </style>
+</head>
+<body 
+    <form id="form1" runat="server">
+        <div style="width: 700px; height: 150px; margin-left:300px; background-color: #ce7171;">      
+        </div>
+        <div style="margin-left:300px; width:700px; height:20px;"></div>
+        <div style="margin-left:300px; width:700px; height:25px; background-color: #ce7171;">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style2"><strong><a href="AnaSayfa.aspx">ANA SAYFA</a></strong></td>
+                    <td class="auto-style3"><strong><a href="GununYemegi.aspx">GÜNÜN YEMEĞİ</a></strong></td>
+                    <td class="auto-style3"><strong><a href="TarifOner.aspx">TARİF ÖNER</a></strong></td>
+                    <td class="auto-style3"><strong><a href="Hakkimizda.aspx">HAKKIMIZDA</a></strong></td>
+                    <td class="auto-style3"><strong><a href="iletisim.aspx">İLETİŞİM</a></strong></td>
+                </tr>
+            </table>
+        </div>
+        <div style="margin-left:300px; width:700px; height:20px;"></div>
+        <div style="margin-left:300px; width:700px; height:300px;">
+             <div style=" width:200px; float:left; height:100px;background-color:#ce7171;" ></div>
+             <div style=" margin-left:50px; float:left; width:450px; height:300px;background-color:#ce7171;" >
+                  <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+             </div>
+        </div>
+       
+
+    </form>
+</body>
+</html>
