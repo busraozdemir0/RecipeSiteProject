@@ -5,7 +5,7 @@
 <html>
 <head runat="server">
     <title></title>
-    <link href="Menu.css" rel="stylesheet" />
+    <link href="Kullanici.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style type="text/css">
@@ -66,7 +66,7 @@
                      </ItemTemplate>
                  </asp:DataList>
              </div>
-             <div style=" margin-left:50px; float:left; width:450px; height:auto;background-color:#ce7171;" >
+             <div style=" margin-left:25px; float:left; width:475px; height:auto;background-color:#ce7171;" >
                   <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
              </div>

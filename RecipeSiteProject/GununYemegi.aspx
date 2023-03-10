@@ -21,11 +21,14 @@
         .auto-style11 {
             width: 401px;
         }
+        .auto-style12 {
+            margin-right: 27px;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-        <asp:DataList ID="DataList2" runat="server" Width="446px">
+        <asp:DataList ID="DataList2" runat="server" Width="446px" CssClass="auto-style12">
             <ItemTemplate>
                 <table class="auto-style10">
                     <tr>
@@ -35,7 +38,7 @@
                     </tr>
                     <tr>
                         <td class="auto-style6">
-                            <strong>Malzemeler:</strong>
+                            <strong><span class="auto-style4">Malzemeler:</span></strong>
                             <asp:Label ID="Label4" runat="server" Text='<%# Eval("GununYemegiMalzeme") %>'></asp:Label>
                         </td>
                     </tr>
@@ -45,13 +48,13 @@
                     </tr>
                     <tr>
                         <td class="auto-style6">
-                            <strong>Tarif:</strong>
+                            <strong><span class="auto-style4">Tarif:</span></strong>
                             <asp:Label ID="Label5" runat="server" Text='<%# Eval("GununYemegiTarif") %>'></asp:Label>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style6">
-                            <asp:Image ID="Image1" runat="server" Height="179px" Width="430px" ImageUrl="~/Resimler/mücver.jpg" />
+                            <asp:Image ID="Image1" runat="server" Height="179px" Width="426px" ImageUrl="~/Resimler/mücver.jpg" />
                         </td>
                     </tr>
                     <tr>

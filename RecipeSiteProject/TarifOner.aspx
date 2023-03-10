@@ -22,44 +22,44 @@
             <tr>
                 <td style="text-align:right;" class="auto-style7"><strong>Tarif Ad:</strong></td>
                 <td>
-                    <asp:TextBox ID="TxtTarifAd" runat="server" Width="250px" Height="22px"></asp:TextBox>
+                    <asp:TextBox ID="TxtTarifAd" runat="server" Width="250px" Height="22px" CssClass="tb5"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:right;" class="auto-style7"><strong>Malzemeler:</strong></td>
                 <td>
-                    <asp:TextBox ID="TxtMalzeme" runat="server" Height="80px" TextMode="MultiLine" Width="250px"></asp:TextBox>
+                    <asp:TextBox ID="TxtMalzeme" runat="server" Height="80px" TextMode="MultiLine" Width="250px" CssClass="tb5"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:right;" class="auto-style7"><strong>Yapılış:</strong></td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="TxtYapilis" runat="server" Height="150px" TextMode="MultiLine" Width="250px"></asp:TextBox>
+                    <asp:TextBox ID="TxtYapilis" runat="server" Height="150px" TextMode="MultiLine" Width="250px" CssClass="tb5"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:right;" class="auto-style7"><strong>Resim:</strong></td>
                 <td class="auto-style5">
-                    <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" Height="25px" />
+                    <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" Height="25px" CssClass="tb5" />
                 </td>
             </tr>
             <tr>
                 <td style="text-align:right;" class="auto-style7"><strong>Tarif Öneren:</strong></td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="TxtOneren" runat="server" Width="250px" Height="22px"></asp:TextBox>
+                    <asp:TextBox ID="TxtOneren" runat="server" Width="250px" Height="22px" CssClass="tb5"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td style="text-align:right;" class="auto-style7"><strong>Mail Adresi:</strong></td>
                 <td class="auto-style5">
-                    <asp:TextBox ID="TxtMail" runat="server" TextMode="Email" Width="250px" Height="22px"></asp:TextBox>
+                    <asp:TextBox ID="TxtMail" runat="server" TextMode="Email" Width="250px" Height="22px" CssClass="tb5"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style7">&nbsp;</td>
                 <td class="auto-style5">
                     <strong><em>
-                    <asp:Button ID="BtnOner" runat="server" Text="Tarif Öner" BackColor="#FFCC99" CssClass="auto-style6" Font-Bold="True" Height="36px" Width="108px" BorderColor="#FFCC99" OnClick="BtnOner_Click"/>
+                    <asp:Button ID="BtnOner" runat="server" Text="Tarif Öner" BackColor="#FFCC99" CssClass="button" Font-Bold="True" Height="31px" Width="121px" BorderColor="#FFCC99" OnClick="BtnOner_Click"/>
                     </em></strong>
                 </td>
             </tr>

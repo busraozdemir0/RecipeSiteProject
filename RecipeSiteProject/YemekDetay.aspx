@@ -17,34 +17,31 @@
         .auto-style10 {
             background-color: #EEA4A4;
         }
-        .auto-style11 {
-            margin-left: 80px;
-        }
-        .auto-style12 {
-            text-align: right;
-        }
-        .auto-style13 {
-            text-align: right;
-            height: 26px;
-        }
-        .auto-style14 {
-            height: 26px;
-            margin-left: 80px;
-        }
-        .auto-style15 {
-            font-weight: bold;
-            font-size: medium;
-            background-color: #808080;
-        }
-        .auto-style16 {
-            text-align: justify;
-            margin-left: 80px;
-        }
+    .auto-style11 {
+        margin-left: 80px;
+    }
+    .auto-style12 {
+        text-align: right;
+    }
+    .auto-style13 {
+        text-align: right;
+        height: 26px;
+    }
+    .auto-style14 {
+        height: 26px;
+        margin-left: 80px;
+    }
+    .auto-style16 {
+        text-align: justify;
+        margin-left: 80px;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <strong>
+        <em>
         <asp:Label ID="Label3" runat="server" CssClass="auto-style6" Text="Label"></asp:Label>
+        </em>
         </strong>&nbsp;&nbsp;&nbsp;
         <asp:DataList ID="DataList2" runat="server">
             <ItemTemplate>
@@ -77,25 +74,25 @@
             <tr>
                 <td class="auto-style12"><strong>Ad Soyad:</strong> </td>
                 <td class="auto-style11">
-                    <asp:TextBox ID="TxtAdSoyad" runat="server" Height="20px" Width="240px"></asp:TextBox>
+                    <asp:TextBox ID="TxtAdSoyad" runat="server" Height="20px" Width="240px" CssClass="tb5"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style13"><strong>Mail Adresi:</strong></td>
                 <td class="auto-style14">
-                    <asp:TextBox ID="TxtMail" runat="server" Height="20px" Width="240px"></asp:TextBox>
+                    <asp:TextBox ID="TxtMail" runat="server" Height="20px" Width="240px" CssClass="tb5"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td class="auto-style12"><strong>Yorumunuz: </strong></td>
                 <td class="auto-style11">
-                    <asp:TextBox ID="TxtYorum" runat="server" Height="100px" TextMode="MultiLine" Width="241px"></asp:TextBox>
+                    <asp:TextBox ID="TxtYorum" runat="server" Height="100px" TextMode="MultiLine" Width="241px" CssClass="tb5"></asp:TextBox>
                 </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
                 <td class="auto-style16"><strong><em>
-                    <asp:Button ID="BtnYorumYap" runat="server" CssClass="auto-style15" Height="26px" OnClick="BtnYorumYap_Click" Text="Yorum Yap" Width="115px" />
+                    <asp:Button ID="BtnYorumYap" runat="server" CssClass="button" Height="34px" OnClick="BtnYorumYap_Click" Text="Yorum Yap" Width="117px" BorderStyle="None" style="font-weight: bold; font-size: medium; background-color: #999999" />
                     </em></strong></td>
             </tr>
             <tr>
@@ -103,5 +100,5 @@
                 <td class="auto-style16">&nbsp;</td>
             </tr>
         </table>
-        </asp:Panel>
+</asp:Panel>
 </asp:Content>
