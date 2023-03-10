@@ -11,25 +11,16 @@ namespace RecipeSiteProject
 {
 
 
-    public partial class Hakkimizda
+    public partial class KategoriDetay
     {
 
         /// <summary>
-        /// Image1 control.
+        /// DataList2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
-
-        /// <summary>
-        /// DataList3 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DataList DataList3;
+        protected global::System.Web.UI.WebControls.DataList DataList2;
     }
 }

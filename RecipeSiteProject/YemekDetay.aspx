@@ -35,6 +35,13 @@
         text-align: justify;
         margin-left: 80px;
     }
+        .auto-style17 {
+            border: 2px solid #456879;
+            border-radius: 10px;
+            height: 22px;
+            width: 230px;
+            background-color: #FFCC99;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -80,7 +87,7 @@
             <tr>
                 <td class="auto-style13"><strong>Mail Adresi:</strong></td>
                 <td class="auto-style14">
-                    <asp:TextBox ID="TxtMail" runat="server" Height="20px" Width="240px" CssClass="tb5"></asp:TextBox>
+                    <asp:TextBox ID="TxtMail" runat="server" Height="20px" Width="240px" CssClass="tb5" TextMode="Email"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -92,7 +99,7 @@
             <tr>
                 <td>&nbsp;</td>
                 <td class="auto-style16"><strong><em>
-                    <asp:Button ID="BtnYorumYap" runat="server" CssClass="button" Height="34px" OnClick="BtnYorumYap_Click" Text="Yorum Yap" Width="117px" BorderStyle="None" style="font-weight: bold; font-size: medium; background-color: #999999" />
+                    <asp:Button ID="BtnYorumYap" runat="server" CssClass="auto-style17" Height="34px" OnClick="BtnYorumYap_Click" Text="Yorum Yap" Width="117px" BorderStyle="None" style="font-weight: bold; font-size: medium; " />
                     </em></strong></td>
             </tr>
             <tr>

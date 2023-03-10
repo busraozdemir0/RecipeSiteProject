@@ -67,11 +67,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Admin.aspx" />
     <Content Include="AnaSayfa.aspx" />
     <Content Include="GununYemegi.aspx" />
     <Content Include="Hakkimizda.aspx" />
+    <Content Include="Iconlar\delete.png" />
+    <Content Include="Iconlar\update.png" />
     <Content Include="iletisim.aspx" />
+    <Content Include="KategoriDetay.aspx" />
+    <Content Include="Kategoriler.aspx" />
     <Content Include="Kullanici.css" />
+    <Content Include="Resimler\admin_header.jpg" />
+    <Content Include="Resimler\hakkimizdaresim.jpg" />
+    <Content Include="Resimler\header.jpg" />
+    <Content Include="Resimler\header2.jpg" />
+    <Content Include="Resimler\header3.jpg" />
+    <Content Include="Resimler\header4.jpg" />
+    <Content Include="Resimler\header5.jpg" />
+    <Content Include="Resimler\header6.jpg" />
     <Content Include="Resimler\mücver.jpg" />
     <Content Include="TarifOner.aspx" />
     <Content Include="Web.config" />
@@ -79,6 +92,20 @@
     <Content Include="YemekTarifleSitem.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin.aspx.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.aspx.designer.cs">
+      <DependentUpon>Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin.Master.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin.Master.designer.cs">
+      <DependentUpon>Admin.Master</DependentUpon>
+    </Compile>
     <Compile Include="AnaSayfa.aspx.cs">
       <DependentUpon>AnaSayfa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -106,6 +133,20 @@
     </Compile>
     <Compile Include="iletisim.aspx.designer.cs">
       <DependentUpon>iletisim.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.cs">
+      <DependentUpon>KategoriDetay.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KategoriDetay.aspx.designer.cs">
+      <DependentUpon>KategoriDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Kategoriler.aspx.designer.cs">
+      <DependentUpon>Kategoriler.aspx</DependentUpon>
     </Compile>
     <Compile Include="Kullanici.Master.cs">
       <DependentUpon>Kullanici.Master</DependentUpon>
@@ -140,6 +181,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Kullanici.Master" />
+    <Content Include="Admin.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

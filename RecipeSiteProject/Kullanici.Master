@@ -21,10 +21,6 @@
             
         }
 
-        .auto-style3 {
-            text-align: center;
-          
-        }
         .auto-style4 {
             font-size: large;
            
@@ -34,11 +30,15 @@
             height: 37px;
 
         }
+        .auto-style6 {
+            color: #CC3300;
+        }
     </style>
 </head>
 <body>
        <form id="form1" runat="server">
         <div style="width: 700px; height: 150px; margin-left:300px; background-color: #ce7171;">      
+            <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Resimler/header6.jpg" Width="700px" />
         </div>
         <div style="margin-left:300px; width:700px; height:20px;"></div>
         <div style="margin-left:300px; background-color: #ffff;" class="auto-style5">
@@ -55,12 +55,14 @@
         <div style="margin-left:300px; width:700px; height:20px;"></div>
         <div style="margin-left:300px; width:700px; height:auto;">
              <div style=" width:200px; float:left; height:auto;background-color:#ce7171;" >
-                 <strong><span class="auto-style4">KATEGORİLER<br />
+                 <strong><span class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KATEGORİLER<br />
                  </span></strong><br />
                  <asp:DataList ID="DataList1" runat="server" Width="200px">
                      <ItemTemplate>
                          <div style="border: thin solid #C0C0C0">
-                             <asp:Label ID="Label1" runat="server" Text='<%# Eval("KategoriAd") %>'></asp:Label>
+                            <a href="KategoriDetay.aspx?KategoriID= <%# Eval("KategoriID") %>"><strong>
+                             <asp:Label ID="kategoriad" runat="server" Text='<%# Eval("KategoriAd") %>' CssClass="auto-style6"></asp:Label>
+                             </strong> </a> 
                              &nbsp;( <asp:Label ID="Label2" runat="server" Text='<%# Eval("KategoriAdet") %>'></asp:Label>
                              )</div>
                      </ItemTemplate>

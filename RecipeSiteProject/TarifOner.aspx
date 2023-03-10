@@ -4,12 +4,19 @@
         .auto-style5 {
             margin-left: 40px;
         }
-        .auto-style6 {
-            font-weight: bold;
-            font-size: medium;
-        }
         .auto-style7 {
             width: 304px;
+        }
+        .auto-style8 {
+            border: 2px solid #456879;
+            border-radius: 10px;
+        }
+        .auto-style9 {
+            border: 2px solid #456879;
+            border-radius: 10px;
+            height: 22px;
+            width: 230px;
+            font-size: large;
         }
     </style>
 </asp:Content>
@@ -40,7 +47,7 @@
             <tr>
                 <td style="text-align:right;" class="auto-style7"><strong>Resim:</strong></td>
                 <td class="auto-style5">
-                    <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" Height="25px" CssClass="tb5" />
+                    <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" Height="20px" CssClass="auto-style8" />
                 </td>
             </tr>
             <tr>
@@ -59,7 +66,7 @@
                 <td class="auto-style7">&nbsp;</td>
                 <td class="auto-style5">
                     <strong><em>
-                    <asp:Button ID="BtnOner" runat="server" Text="Tarif Öner" BackColor="#FFCC99" CssClass="button" Font-Bold="True" Height="31px" Width="121px" BorderColor="#FFCC99" OnClick="BtnOner_Click"/>
+                    <asp:Button ID="BtnOner" runat="server" Text="Tarif Öner" BackColor="#FFCC99" CssClass="auto-style9" Font-Bold="True" Height="31px" Width="121px" BorderColor="#FFCC99" OnClick="BtnOner_Click"/>
                     </em></strong>
                 </td>
             </tr>

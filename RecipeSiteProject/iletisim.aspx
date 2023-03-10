@@ -15,7 +15,14 @@
         color: #000000;
         text-align: center;
     }
-</style>
+        .auto-style11 {
+            border: 2px solid #456879;
+            border-radius: 10px;
+            height: 22px;
+            width: 230px;
+            background-color: #FFCC99;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="auto-style6">
@@ -35,7 +42,7 @@
     <tr>
         <td class="auto-style8"><strong>Mail Adresiniz:&nbsp;</strong></td>
         <td>
-            <asp:TextBox ID="TxtMail" runat="server" CssClass="tb5"></asp:TextBox>
+            <asp:TextBox ID="TxtMail" runat="server" CssClass="tb5" TextMode="Email"></asp:TextBox>
         </td>
     </tr>
     <tr>
@@ -53,7 +60,7 @@
     <tr>
         <td>&nbsp;</td>
         <td class="auto-style7"><strong>
-            <asp:Button ID="BtnGonder" runat="server" CssClass="button" Text="Gönder" Width="117px" BorderStyle="None" Height="34px" OnClick="BtnGonder_Click" style="font-size: large; font-weight: bold; background-color: #999999" />
+            <asp:Button ID="BtnGonder" runat="server" CssClass="auto-style11" Text="Gönder" Width="117px" BorderStyle="None" Height="34px" OnClick="BtnGonder_Click" style="font-size: large; font-weight: bold; " />
             </strong></td>
     </tr>
 </table>
