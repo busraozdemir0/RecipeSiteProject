@@ -6,6 +6,7 @@
         }
         .auto-style6 {
             font-weight: bold;
+            font-size: medium;
         }
         .auto-style7 {
             width: 304px;
