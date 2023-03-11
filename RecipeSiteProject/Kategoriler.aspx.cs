@@ -11,12 +11,31 @@ namespace RecipeSiteProject
     public partial class Kategoriler : System.Web.UI.Page
     {
         SqlSinif baglan = new SqlSinif();
+        string id = "";
+        string islem = "";
         protected void Page_Load(object sender, EventArgs e)
         {
+            if(Page.IsPostBack==false)
+            {
+                id = Request.QueryString["KategoriID"];
+                islem = Request.QueryString["islem"];
+            }
+
             SqlCommand komut = new SqlCommand("Select * From Kategori", baglan.baglanti());
             SqlDataReader oku = komut.ExecuteReader();
             DataList1.DataSource = oku;
             DataList1.DataBind();
+
+            //Silme işlemi
+            if(islem=="sil")
+            {
+                SqlCommand komutSil = new SqlCommand("Delete from Kategori where KategoriID=@kId", baglan.baglanti());
+                komutSil.Parameters.AddWithValue("@kId", id);
+                komutSil.ExecuteNonQuery();
+                baglan.baglanti().Close();
+                Response.Write("<script> alert('Kategori Başarıyla Silindi.') </script>");
+            }
+
 
             Panel2.Visible = false;
             Panel4.Visible = false;
@@ -50,6 +69,8 @@ namespace RecipeSiteProject
             komut.Parameters.AddWithValue("@kategoriad", TextBox1.Text);
             komut.ExecuteNonQuery();
             baglan.baglanti().Close();
+
+            Response.Write("<script> alert('Kategori Başarıyla Eklendi.') </script>");
         }
     }
 }

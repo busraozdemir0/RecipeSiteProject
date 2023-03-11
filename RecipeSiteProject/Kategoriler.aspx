@@ -6,7 +6,7 @@
         }
     .auto-style4 {
         text-align: left;
-        width: 258px;
+        width: 209px;
     }
     .auto-style5 {
             text-align: center;
@@ -14,9 +14,6 @@
     .auto-style6 {
         font-size: large;
     }
-        .auto-style7 {
-            text-align: right;
-        }
         .auto-style10 {
             font-weight: bold;
             font-size: x-large;
@@ -52,6 +49,10 @@
             font-size: large;
             text-align: right;
         }
+        .auto-style20 {
+            text-align: center;
+            width: 153px;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -77,12 +78,13 @@
                 <table class="auto-style1">
                     <tr>
                         <td class="auto-style4">
+                            &nbsp;&nbsp;&nbsp;
                             <asp:Label ID="Label1" runat="server" CssClass="auto-style6" Text='<%# Eval("KategoriAd") %>'></asp:Label>
                         </td>
-                        <td class="auto-style5">
-                            <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/Iconlar/delete.png" Width="30px" />
+                        <td class="auto-style20">
+                           <a href="Kategoriler.aspx?KategoriID=<%# Eval("KategoriID") %>&islem=sil"> <asp:Image ID="Image2" runat="server" Height="30px" ImageUrl="~/Iconlar/delete.png" Width="30px" /></a>
                         </td>
-                        <td class="auto-style7">
+                        <td class="auto-style5">
                             <a href="KategoriDuzenle.aspx?KategoriID=<%# Eval("KategoriID") %>"><asp:Image ID="Image3" runat="server" Height="30px" ImageUrl="~/Iconlar/update.png" Width="30px" /></a>
                         </td>
                     </tr>

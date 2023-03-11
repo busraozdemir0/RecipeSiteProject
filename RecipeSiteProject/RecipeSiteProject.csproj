@@ -90,6 +90,8 @@
     <Content Include="TarifOner.aspx" />
     <Content Include="Web.config" />
     <Content Include="YemekDetay.aspx" />
+    <Content Include="YemekDuzenle.aspx" />
+    <Content Include="Yemekler.aspx" />
     <Content Include="YemekTarifleSitem.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -178,6 +180,20 @@
     </Compile>
     <Compile Include="YemekDetay.aspx.designer.cs">
       <DependentUpon>YemekDetay.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YemekDuzenle.aspx.cs">
+      <DependentUpon>YemekDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YemekDuzenle.aspx.designer.cs">
+      <DependentUpon>YemekDuzenle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Yemekler.aspx.cs">
+      <DependentUpon>Yemekler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yemekler.aspx.designer.cs">
+      <DependentUpon>Yemekler.aspx</DependentUpon>
     </Compile>
     <Compile Include="YemekTarifleSitem.aspx.cs">
       <DependentUpon>YemekTarifleSitem.aspx</DependentUpon>

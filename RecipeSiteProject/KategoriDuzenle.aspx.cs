@@ -39,7 +39,7 @@ namespace RecipeSiteProject
             komut.ExecuteNonQuery();
             baglan.baglanti().Close();
 
-            Response.Write("<script> alert('Başarıyla Güncellendi.') </script>");
+            Response.Write("<script> alert('Kategori Başarıyla Güncellendi.') </script>");
 
         }
     }

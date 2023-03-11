@@ -19,7 +19,7 @@
             font-size: large;
         }
         .auto-style8 {
-            font-size: medium;
+            font-size: large;
             font-weight: bold;
             font-style: italic;
             background-color: #FFCC99;
@@ -53,7 +53,7 @@
         <tr>
             <td class="auto-style3">&nbsp;</td>
             <td class="auto-style6"><strong><em>
-                <asp:Button ID="BtnGuncelle" runat="server" BorderStyle="None" CssClass="auto-style8" Height="28px" OnClick="BtnGuncelle_Click" Text="Güncelle" Width="77px" />
+                <asp:Button ID="BtnGuncelle" runat="server" BorderStyle="None" CssClass="auto-style8" Height="28px" OnClick="BtnGuncelle_Click" Text="Güncelle" Width="92px" />
                 </em></strong></td>
         </tr>
     </table>
