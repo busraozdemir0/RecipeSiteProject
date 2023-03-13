@@ -29,6 +29,30 @@ namespace RecipeSiteProject
                 }
                 baglan.baglanti().Close();
             }
+
+            //Kategori listesi
+            if (Page.IsPostBack == false)
+            {
+                SqlCommand komutKategori = new SqlCommand("Select * from Kategori", baglan.baglanti());
+                SqlDataReader oku2 = komutKategori.ExecuteReader();
+                DropDownList1.DataTextField = "KategoriAd";
+                DropDownList1.DataValueField = "KategoriID";
+                DropDownList1.DataSource = oku2;
+                DropDownList1.DataBind();
+            }
+        }
+
+        protected void BtnGuncelle_Click(object sender, EventArgs e)
+        {
+            SqlCommand komut = new SqlCommand("Update Yemek Set YemekAd=@ad, YemekMalzeme=@malzeme, YemekTarif=@tarif, KategoriID=@kId where YemekID=@yId",baglan.baglanti());
+            komut.Parameters.AddWithValue("@ad",TxtAd.Text);
+            komut.Parameters.AddWithValue("@malzeme",TxtMalzeme.Text);
+            komut.Parameters.AddWithValue("@tarif",TxtTarif.Text);
+            komut.Parameters.AddWithValue("@kId",DropDownList1.SelectedValue);
+            komut.Parameters.AddWithValue("@yId", id);
+            komut.ExecuteNonQuery();
+            baglan.baglanti().Close();
+            Response.Write("<script> alert('Yemek Başarıyla Güncellendi.') </script>");
         }
     }
 }

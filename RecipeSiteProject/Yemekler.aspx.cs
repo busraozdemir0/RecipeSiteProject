@@ -10,11 +10,17 @@ namespace RecipeSiteProject
     public partial class Yemekler : System.Web.UI.Page
     {
         SqlSinif baglan=new SqlSinif();
+        string islem = "";
+        string id = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Kategori listesi
+            
             if(Page.IsPostBack==false)
-            {                
+            {
+                id = Request.QueryString["YemekID"];
+                islem= Request.QueryString["islem"];
+
+                //Kategori listesi
                 SqlCommand komutKategori = new SqlCommand("Select * from Kategori", baglan.baglanti());
                 SqlDataReader oku2 = komutKategori.ExecuteReader();
                 DropDownList1.DataTextField = "KategoriAd";
@@ -29,10 +35,20 @@ namespace RecipeSiteProject
             DataList1.DataSource= oku;
             DataList1.DataBind();
 
+
+            //Silme işlemi
+            if(islem=="sil")
+            {
+                SqlCommand komutSil = new SqlCommand("Delete from Yemek where YemekID=@yId",baglan.baglanti());
+                komutSil.Parameters.AddWithValue("@yId", id);
+                komutSil.ExecuteNonQuery();
+                baglan.baglanti().Close();
+                Response.Write("<script> alert('Yemek Başarıyla Silindi.') </script>");
+            }
+
+
             Panel2.Visible = false;
             Panel4.Visible = false;
-
-
 
         }
 
@@ -58,6 +74,7 @@ namespace RecipeSiteProject
 
         protected void BtnEkle_Click(object sender, EventArgs e)
         {
+            //Yemek Ekleme
             SqlCommand komut = new SqlCommand("insert into Yemek (YemekAd,YemekMalzeme,YemekTarif,KategoriID) values(@ad,@malzeme,@tarif,@kId)", baglan.baglanti());
             komut.Parameters.AddWithValue("@ad",TxtYemekAd.Text);
             komut.Parameters.AddWithValue("@malzeme",TxtMalzemeler.Text);
@@ -65,6 +82,13 @@ namespace RecipeSiteProject
             komut.Parameters.AddWithValue("@kId",DropDownList1.SelectedValue);
             komut.ExecuteNonQuery();
             baglan.baglanti().Close();
+
+            //Kategori Sayısını Arttırma
+            SqlCommand komut2 = new SqlCommand("update Kategori Set KategoriAdet=KategoriAdet+1 Where KategoriID=@kId",baglan.baglanti());
+            komut2.Parameters.AddWithValue("@kId",DropDownList1.SelectedValue);
+            komut2.ExecuteNonQuery();
+            baglan.baglanti().Close();
+
             Response.Write("<script> alert('Yemek Başarıyla Eklendi.') </script>");
         }
     }

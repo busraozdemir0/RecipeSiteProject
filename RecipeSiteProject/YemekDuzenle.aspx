@@ -58,7 +58,7 @@
         <tr>
             <td class="auto-style6"></td>
             <td class="auto-style7"><strong><em>
-                <asp:Button ID="BtnGuncelle" runat="server" BorderStyle="None" CssClass="auto-style5" Height="33px" Text="Güncelle" Width="250px" />
+                <asp:Button ID="BtnGuncelle" runat="server" BorderStyle="None" CssClass="auto-style5" Height="33px" Text="Güncelle" Width="250px" OnClick="BtnGuncelle_Click" />
                 </em></strong></td>
         </tr>
         <tr>
