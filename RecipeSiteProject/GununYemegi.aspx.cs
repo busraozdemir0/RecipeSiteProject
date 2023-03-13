@@ -13,7 +13,7 @@ namespace RecipeSiteProject
         SqlSinif baglan = new SqlSinif();
         protected void Page_Load(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Select * From GununYemegi", baglan.baglanti());
+            SqlCommand komut = new SqlCommand("Select * From Yemek where Durum=1", baglan.baglanti());
             SqlDataReader oku = komut.ExecuteReader();
             DataList2.DataSource = oku;
             DataList2.DataBind();
