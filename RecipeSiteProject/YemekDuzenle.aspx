@@ -5,10 +5,6 @@
             text-align: right;
             font-size: large;
         }
-        .auto-style4 {
-            text-align: center;
-            height: 31px;
-        }
         .auto-style5 {
             font-weight: bold;
             font-style: italic;
@@ -22,6 +18,12 @@
             text-align: left;
             height: 31px;
         }
+    .auto-style8 {
+        font-weight: bold;
+        font-style: italic;
+        font-size: large;
+        background-color: #C0C0C0;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -59,11 +61,14 @@
             <td class="auto-style6"></td>
             <td class="auto-style7"><strong><em>
                 <asp:Button ID="BtnGuncelle" runat="server" BorderStyle="None" CssClass="auto-style5" Height="33px" Text="Güncelle" Width="250px" OnClick="BtnGuncelle_Click" />
+                &nbsp;&nbsp;
                 </em></strong></td>
         </tr>
         <tr>
             <td class="auto-style6">&nbsp;</td>
-            <td class="auto-style4">&nbsp;</td>
+            <td class="auto-style7"><strong><em>
+                <asp:Button ID="BtnSec" runat="server" BorderStyle="None" CssClass="auto-style8" Height="33px" OnClick="BtnSec_Click" Text="Günün Yemeği Seç" Width="250px" />
+                </em></strong></td>
         </tr>
     </table>
 </asp:Content>

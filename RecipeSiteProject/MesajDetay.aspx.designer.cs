@@ -11,61 +11,43 @@ namespace RecipeSiteProject
 {
 
 
-    public partial class YemekDuzenle
+    public partial class MesajDetay
     {
 
         /// <summary>
-        /// TxtAd control.
+        /// TxtGonderen control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtAd;
+        protected global::System.Web.UI.WebControls.TextBox TxtGonderen;
 
         /// <summary>
-        /// TxtMalzeme control.
+        /// TxtMail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtMalzeme;
+        protected global::System.Web.UI.WebControls.TextBox TxtMail;
 
         /// <summary>
-        /// TxtTarif control.
+        /// TxtKonu control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtTarif;
+        protected global::System.Web.UI.WebControls.TextBox TxtKonu;
 
         /// <summary>
-        /// DropDownList1 control.
+        /// Txticerik control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
-
-        /// <summary>
-        /// BtnGuncelle control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnGuncelle;
-
-        /// <summary>
-        /// BtnSec control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSec;
+        protected global::System.Web.UI.WebControls.TextBox Txticerik;
     }
 }

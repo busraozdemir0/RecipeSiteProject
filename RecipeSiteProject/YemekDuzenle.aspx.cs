@@ -54,5 +54,20 @@ namespace RecipeSiteProject
             baglan.baglanti().Close();
             Response.Write("<script> alert('Yemek Başarıyla Güncellendi.') </script>");
         }
+
+        protected void BtnSec_Click(object sender, EventArgs e)
+        {
+            //Tüm yemeklerin durumu false yapıldı
+            SqlCommand komut = new SqlCommand("Update Yemek Set Durum=0",baglan.baglanti());
+            komut.ExecuteNonQuery();
+            baglan.baglanti().Close();
+
+            //Günün yemeği için id'ye göre durumu true yaptık
+            SqlCommand komut2 = new SqlCommand("Update Yemek Set Durum=1 where YemekID=@yId", baglan.baglanti());
+            komut2.Parameters.AddWithValue("@yId",id);
+            komut2.ExecuteNonQuery();
+            baglan.baglanti().Close();
+            Response.Write("<script> alert('Günün Yemeği Olarak Seçildi.') </script>");
+        }
     }
 }

@@ -9,6 +9,8 @@
     }
     .auto-style8 {
         text-align: right;
+        color: #000000;
+        font-size: large;
     }
     .auto-style10 {
         font-size: x-large;

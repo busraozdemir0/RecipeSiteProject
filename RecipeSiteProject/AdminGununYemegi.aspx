@@ -24,6 +24,12 @@
         .auto-style6 {
         font-size: large;
     }
+        .auto-style14 {
+            text-align: right;
+        }
+        .auto-style15 {
+            width: 368px;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -47,10 +53,10 @@
             <ItemTemplate>
                 <table class="auto-style1">
                     <tr>
-                        <td class="auto-style4">
+                        <td class="auto-style15">
                             <asp:Label ID="Label1" runat="server" CssClass="auto-style6" Text='<%# Eval("YemekAd") %>'></asp:Label>
                         </td>
-                        <td class="auto-style5">
+                        <td class="auto-style14">
                             <a href="YemekDuzenle.aspx?YemekID=<%# Eval("YemekID") %>"><asp:Image ID="Image3" runat="server" Height="40px" ImageUrl="~/Iconlar/choice.png" Width="40px" /></a>
                         </td>
                     </tr>

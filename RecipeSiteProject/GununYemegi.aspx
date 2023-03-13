@@ -5,28 +5,45 @@
         margin-left: 40px;
             text-align: center;
         }
-    .auto-style6 {
-        margin-left: 80px;
-    }
     .auto-style7 {
         font-size: x-large;
-    }
-        .auto-style9 {
-            text-align: left;
-            margin-left: 80px;
+            color: #993366;
+            background-color: #FFCC99;
         }
         .auto-style10 {
-            width: 94%;
+            width: 104%;
         }
         .auto-style11 {
             width: 401px;
         }
         .auto-style12 {
-            margin-right: 27px;
+            margin-right: 3px;
         }
-        .auto-style13 {
+        .auto-style14 {
+            text-align: center;
+            width: 684px;
+            height: 37px;
+            margin-left: 40px;
+            background-color: #FFCC99;
+        }
+        .auto-style15 {
             color: #000000;
             margin-left: 80px;
+            width: 684px;
+        }
+        .auto-style16 {
+            margin-left: 80px;
+            width: 684px;
+        }
+        .auto-style17 {
+            text-align: left;
+            margin-left: 80px;
+            width: 684px;
+        }
+        .auto-style18 {
+            margin-left: 80px;
+            width: 684px;
+            text-align: center;
         }
     </style>
 </asp:Content>
@@ -36,36 +53,36 @@
             <ItemTemplate>
                 <table class="auto-style10">
                     <tr>
-                        <td class="auto-style5"><strong>
+                        <td class="auto-style14"><strong>
                             <asp:Label ID="Label3" runat="server" CssClass="auto-style7" Text='<%# Eval("YemekAd") %>'></asp:Label>
                             </strong></td>
                     </tr>
                     <tr>
-                        <td class="auto-style13">
+                        <td class="auto-style15">
                             <strong><span class="auto-style4">Malzemeler:</span></strong>
                             <asp:Label ID="Label4" runat="server" Text='<%# Eval("YemekMalzeme") %>'></asp:Label>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style6">
+                        <td class="auto-style16">
                             &nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style13">
+                        <td class="auto-style15">
                             <strong><span class="auto-style4">Tarif:</span></strong>
                             <asp:Label ID="Label5" runat="server" Text='<%# Eval("YemekTarif") %>'></asp:Label>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style6">
-                            <asp:Image ID="Image1" runat="server" Height="179px" Width="426px" ImageUrl="~/Resimler/mücver.jpg" />
+                        <td class="auto-style18">
+                            <asp:Image ID="Image1" runat="server" Height="179px" Width="444px" ImageUrl="~/Resimler/mücver.jpg" />
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style9">&nbsp;</td>
+                        <td class="auto-style17">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td class="auto-style9">
+                        <td class="auto-style17">
                             <table class="auto-style1">
                                 <tr>
                                     <td class="auto-style11"><strong>Puan:</strong>&nbsp;<asp:Label ID="Label6" runat="server" Text='<%# Eval("YemekPuan") %>'></asp:Label>
@@ -76,12 +93,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style9"><strong><em>Eklenme Tarihi: </em></strong>
+                        <td class="auto-style17"><strong><em>Eklenme Tarihi: </em></strong>
                             <asp:Label ID="Label7" runat="server" Text='<%# Eval("YemekTarih") %>'></asp:Label>
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style9">&nbsp;</td>
+                        <td class="auto-style17">&nbsp;</td>
                     </tr>
                 </table>
             </ItemTemplate>

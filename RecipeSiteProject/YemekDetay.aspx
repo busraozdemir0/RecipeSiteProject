@@ -1,10 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Kullanici.Master" AutoEventWireup="true" CodeBehind="YemekDetay.aspx.cs" Inherits="RecipeSiteProject.YemekDetay" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style6 {
-            font-size: xx-large;
-            color: #FFFFFF;
-        }
         .auto-style7 {
             width: 100%;
         }
@@ -42,12 +38,15 @@
             width: 230px;
             background-color: #FFCC99;
         }
+    .auto-style18 {
+        font-size: xx-large;
+    }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
         <strong>
         <em>
-        <asp:Label ID="Label3" runat="server" CssClass="auto-style6" Text="Label"></asp:Label>
+        <asp:Label ID="Label3" runat="server" Text="Label" CssClass="auto-style18"></asp:Label>
         </em>
         </strong>&nbsp;&nbsp;&nbsp;
         <asp:DataList ID="DataList2" runat="server">

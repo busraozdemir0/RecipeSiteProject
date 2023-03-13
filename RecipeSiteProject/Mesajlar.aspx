@@ -17,7 +17,7 @@
             font-size: x-large;
         }
         .auto-style22 {
-            width: 43px;
+            width: 35px;
         }
         .auto-style13 {
             text-align: left;
@@ -25,6 +25,9 @@
         .auto-style6 {
         font-size: large;
     }
+        .auto-style23 {
+            text-align: right;
+        }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -54,8 +57,8 @@
                             &nbsp;&nbsp;&nbsp;
                             <asp:Label ID="Label1" runat="server" CssClass="auto-style6" Text='<%# Eval("MesajGonderen") %>'></asp:Label>
                         </td>
-                        <td class="auto-style5">
-                           <a href="MesajDetay.aspx?MesajID=<%# Eval("MesajID") %>&islem=oku"> <asp:Image ID="Image2" runat="server" Height="40px" ImageUrl="~/Iconlar/read.png" Width="40px" /></a>
+                        <td class="auto-style23">
+                           <a href="MesajDetay.aspx?MesajID=<%# Eval("MesajID") %>"> <asp:Image ID="Image2" runat="server" Height="40px" ImageUrl="~/Iconlar/read.png" Width="40px" /></a>
                         </td>
                     </tr>
                 </table>
