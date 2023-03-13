@@ -72,5 +72,10 @@ namespace RecipeSiteProject
 
             Response.Write("<script> alert('Kategori Başarıyla Eklendi.') </script>");
         }
+
+        protected void DataList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -73,7 +73,7 @@
     </asp:Panel>
 
     <asp:Panel ID="Panel2" runat="server">
-        <asp:DataList ID="DataList1" runat="server">
+        <asp:DataList ID="DataList1" runat="server" OnSelectedIndexChanged="DataList1_SelectedIndexChanged">
             <ItemTemplate>
                 <table class="auto-style1">
                     <tr>
