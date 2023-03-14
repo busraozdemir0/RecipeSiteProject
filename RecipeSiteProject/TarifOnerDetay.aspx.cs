@@ -58,6 +58,8 @@ namespace RecipeSiteProject
             komut2.Parameters.AddWithValue("@kId",DropDownList1.SelectedValue);
             komut2.ExecuteNonQuery();
             baglan.baglanti().Close();
+
+            Response.Write("<script> alert('Tarif Başarıyla Onaylandı.') </script>");
         }
     }
 }

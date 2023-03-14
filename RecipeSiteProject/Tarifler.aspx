@@ -27,8 +27,8 @@
         font-size: large;
     }
         .auto-style23 {
-            text-align: right;
-        }
+        text-align: right;
+    }
         </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">

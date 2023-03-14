@@ -29,7 +29,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <table class="auto-style6">
     <tr>
-        <td class="auto-style10" colspan="2"><strong><em>MESAJ PANELİ</em></strong></td>
+        <td class="auto-style10" colspan="2"><strong><em>İLETİŞİM PANELİ</em></strong></td>
     </tr>
     <tr>
         <td>&nbsp;</td>

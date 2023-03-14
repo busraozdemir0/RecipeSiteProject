@@ -44,12 +44,15 @@ namespace RecipeSiteProject
 
         protected void BtnGuncelle_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Update Yemek Set YemekAd=@ad, YemekMalzeme=@malzeme, YemekTarif=@tarif, KategoriID=@kId where YemekID=@yId",baglan.baglanti());
+            FileUpload1.SaveAs(Server.MapPath("/Resimler/" + FileUpload1.FileName));
+
+            SqlCommand komut = new SqlCommand("Update Yemek Set YemekAd=@ad, YemekMalzeme=@malzeme, YemekTarif=@tarif, KategoriID=@kId, YemekResim=@resim where YemekID=@yId",baglan.baglanti());
             komut.Parameters.AddWithValue("@ad",TxtAd.Text);
             komut.Parameters.AddWithValue("@malzeme",TxtMalzeme.Text);
             komut.Parameters.AddWithValue("@tarif",TxtTarif.Text);
             komut.Parameters.AddWithValue("@kId",DropDownList1.SelectedValue);
             komut.Parameters.AddWithValue("@yId", id);
+            komut.Parameters.AddWithValue("@resim", "~/Resimler/"+FileUpload1.FileName);
             komut.ExecuteNonQuery();
             baglan.baglanti().Close();
             Response.Write("<script> alert('Yemek Başarıyla Güncellendi.') </script>");

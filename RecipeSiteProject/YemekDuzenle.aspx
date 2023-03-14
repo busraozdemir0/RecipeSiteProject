@@ -24,6 +24,13 @@
         font-size: large;
         background-color: #C0C0C0;
     }
+        .auto-style9 {
+            height: 31px;
+            text-align: right;
+        }
+        .auto-style10 {
+            font-size: large;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -58,10 +65,15 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style6"></td>
+            <td class="auto-style9"><strong><span class="auto-style10">YEMEK GÖRSEL:</span></strong> </td>
+            <td class="auto-style7">
+                <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style6">&nbsp;</td>
             <td class="auto-style7"><strong><em>
                 <asp:Button ID="BtnGuncelle" runat="server" BorderStyle="None" CssClass="auto-style5" Height="33px" Text="Güncelle" Width="250px" OnClick="BtnGuncelle_Click" />
-                &nbsp;&nbsp;
                 </em></strong></td>
         </tr>
         <tr>

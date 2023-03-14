@@ -11,53 +11,53 @@ namespace RecipeSiteProject
 {
 
 
-    public partial class YemekDuzenle
+    public partial class AdminHakkimizda
     {
 
         /// <summary>
-        /// TxtAd control.
+        /// Panel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtAd;
+        protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
-        /// TxtMalzeme control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtMalzeme;
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
-        /// TxtTarif control.
+        /// Button2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtTarif;
+        protected global::System.Web.UI.WebControls.Button Button2;
 
         /// <summary>
-        /// DropDownList1 control.
+        /// Panel2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.Panel Panel2;
 
         /// <summary>
-        /// FileUpload1 control.
+        /// TextBox1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FileUpload1;
+        protected global::System.Web.UI.WebControls.TextBox TextBox1;
 
         /// <summary>
         /// BtnGuncelle control.
@@ -67,14 +67,5 @@ namespace RecipeSiteProject
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnGuncelle;
-
-        /// <summary>
-        /// BtnSec control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnSec;
     }
 }
