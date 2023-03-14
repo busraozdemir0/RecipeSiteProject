@@ -16,6 +16,7 @@
         .auto-style9 {
             height: 23px;
             color: #000000;
+            text-align: left;
         }
         .auto-style11 {
             font-size: medium;
@@ -25,6 +26,10 @@
         }
         .auto-style13 {
             color: #FFFFFF;
+        }
+        .auto-style14 {
+            color: #000000;
+            text-align: left;
         }
         </style>
 </asp:Content>
@@ -43,14 +48,14 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style12"><strong><span class="auto-style4">Yemek Tarifi:</span></strong>
+                <td class="auto-style14"><strong><span class="auto-style4">Yemek Tarifi:</span></strong>
                     <asp:Label ID="Label5" runat="server" Text='<%# Eval("YemekTarif") %>'></asp:Label>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style12"><span class="auto-style11">&nbsp;</span><strong><em><span class="auto-style11">Eklenme Tarihi:</span></em></strong>&nbsp;<strong><em><asp:Label ID="Label6" runat="server" CssClass="auto-style13" Text='<%# Eval("YemekTarih") %>'></asp:Label>
+                <td class="auto-style14"><span class="auto-style11">&nbsp;</span><strong><em><span class="auto-style11">Eklenme Tarihi:</span></em></strong>&nbsp;<strong><em><asp:Label ID="Label6" runat="server" CssClass="auto-style13" Text='<%# Eval("YemekTarih") %>'></asp:Label>
                     </em></strong><span class="auto-style12">&nbsp;&nbsp;-&nbsp; <strong><em>Puan:</em></strong></span> <em><strong>
-                    <asp:Label ID="Label7" runat="server" CssClass="auto-style12" Text='<%# Eval("YemekPuan") %>'></asp:Label>
+                    <asp:Label ID="Label7" runat="server" CssClass="auto-style13" Text='<%# Eval("YemekPuan") %>'></asp:Label>
                     </strong></em><span class="auto-style12">&nbsp; </span> </td>
             </tr>
             <tr>

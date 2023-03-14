@@ -7,10 +7,6 @@
         .auto-style7 {
             width: 304px;
         }
-        .auto-style8 {
-            border: 2px solid #456879;
-            border-radius: 10px;
-        }
         .auto-style9 {
             border: 2px solid #456879;
             border-radius: 10px;
@@ -45,9 +41,9 @@
                 </td>
             </tr>
             <tr>
-                <td style="text-align:right;" class="auto-style7"><strong>Resim:</strong></td>
+                <td style="text-align:right;" class="auto-style7"><strong>Tarif Görsel:</strong></td>
                 <td class="auto-style5">
-                    <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" Height="20px" CssClass="auto-style8" />
+                    <asp:FileUpload ID="FileUpload1" runat="server" Height="24px" Width="253px" />
                 </td>
             </tr>
             <tr>
@@ -69,6 +65,11 @@
                     <asp:Button ID="BtnOner" runat="server" Text="Tarif Öner" BackColor="#FFCC99" CssClass="auto-style9" Font-Bold="True" Height="31px" Width="121px" BorderColor="#FFCC99" OnClick="BtnOner_Click"/>
                     </em></strong>
                 </td>
+            </tr>
+            <tr>
+                <td class="auto-style7">&nbsp;</td>
+                <td class="auto-style5">
+                    &nbsp;</td>
             </tr>
         </table>
 </asp:Content>

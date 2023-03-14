@@ -43,6 +43,15 @@ namespace RecipeSiteProject
                 komutSil.Parameters.AddWithValue("@yId", id);
                 komutSil.ExecuteNonQuery();
                 baglan.baglanti().Close();
+
+                //Kategori Sayısını Azaltma
+                //SqlCommand komutId = new SqlCommand("select KategoriID from Yemek where YemekID=@yId");
+                //komutId.Parameters.AddWithValue("@yId", id);
+                //SqlCommand komut2 = new SqlCommand("update Kategori Set KategoriAdet=KategoriAdet-1 Where KategoriID=@kId", baglan.baglanti());
+                //komut2.Parameters.AddWithValue("@kId", Convert.ToInt32(komutId));
+                //komut2.ExecuteNonQuery();
+                //baglan.baglanti().Close();
+
                 Response.Write("<script> alert('Yemek Başarıyla Silindi.') </script>");
             }
 
@@ -74,11 +83,14 @@ namespace RecipeSiteProject
 
         protected void BtnEkle_Click(object sender, EventArgs e)
         {
+            FileUpload1.SaveAs(Server.MapPath("/Resimler/" + FileUpload1.FileName));
+
             //Yemek Ekleme
-            SqlCommand komut = new SqlCommand("insert into Yemek (YemekAd,YemekMalzeme,YemekTarif,KategoriID) values(@ad,@malzeme,@tarif,@kId)", baglan.baglanti());
+            SqlCommand komut = new SqlCommand("insert into Yemek (YemekAd,YemekMalzeme,YemekTarif,YemekResim,KategoriID) values(@ad,@malzeme,@tarif,@resim,@kId)", baglan.baglanti());
             komut.Parameters.AddWithValue("@ad",TxtYemekAd.Text);
             komut.Parameters.AddWithValue("@malzeme",TxtMalzemeler.Text);
             komut.Parameters.AddWithValue("@tarif",TxtTarif.Text);
+            komut.Parameters.AddWithValue("@resim", "~/Resimler/" + FileUpload1.FileName);
             komut.Parameters.AddWithValue("@kId",DropDownList1.SelectedValue);
             komut.ExecuteNonQuery();
             baglan.baglanti().Close();
@@ -88,6 +100,10 @@ namespace RecipeSiteProject
             komut2.Parameters.AddWithValue("@kId",DropDownList1.SelectedValue);
             komut2.ExecuteNonQuery();
             baglan.baglanti().Close();
+
+            TxtYemekAd.Text = "";
+            TxtTarif.Text = "";
+            TxtMalzemeler.Text = "";
 
             Response.Write("<script> alert('Yemek Başarıyla Eklendi.') </script>");
         }

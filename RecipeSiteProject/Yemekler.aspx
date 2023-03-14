@@ -44,10 +44,6 @@
             font-weight: bold;
             font-size: x-large;
         }
-        .auto-style18 {
-            width: 40px;
-            text-align: center;
-        }
         .auto-style19 {
             font-size: large;
             text-align: right;
@@ -59,6 +55,20 @@
             margin-left: 40px;
             height: 32px;
             text-align: center;
+        }
+        .auto-style22 {
+            width: 37px;
+            text-align: center;
+        }
+        .auto-style23 {
+            height: 32px;
+            text-align: right;
+            font-size: large;
+        }
+        .auto-style24 {
+            margin-left: 40px;
+            height: 32px;
+            text-align: left;
         }
         </style>
 </asp:Content>
@@ -101,10 +111,10 @@
     <asp:Panel ID="Panel3" runat="server" style="margin-top:15px;" CssClass="auto-style3">
         <table class="auto-style1">
             <tr>
-                <td class="auto-style18"><strong><em><span class="auto-style6">
+                <td class="auto-style22"><strong><em><span class="auto-style6">
                     <asp:Button ID="Button3" runat="server" CssClass="auto-style16" Height="30px"  Text="+" Width="30px" OnClick="Button3_Click"  />
                     </span></em></strong></td>
-                <td class="auto-style18"><strong><em><span class="auto-style6">
+                <td class="auto-style22"><strong><em><span class="auto-style6">
                     <asp:Button ID="Button4" runat="server" CssClass="auto-style10" Height="30px"  Text="-" Width="30px" OnClick="Button4_Click"  />
                     </span></em></strong></td>
                 <td><strong><em><span class="auto-style6">YEMEK EKLEME</span></em></strong></td>
@@ -143,7 +153,13 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style20"></td>
+            <td class="auto-style23"><strong>GÖRSEL:</strong></td>
+            <td class="auto-style24">
+                <asp:FileUpload ID="FileUpload1" runat="server" Height="25px" Width="301px" />
+            </td>
+        </tr>
+        <tr>
+            <td class="auto-style20">&nbsp;</td>
             <td class="auto-style21"><strong><em>
                 <asp:Button ID="BtnEkle" runat="server" BorderStyle="None" CssClass="auto-style15" Height="28px" OnClick="BtnEkle_Click" Text="Ekle" Width="117px" />
                 </em></strong></td>

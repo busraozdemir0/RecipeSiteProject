@@ -40,16 +40,29 @@
         }
     .auto-style18 {
         font-size: xx-large;
-    }
+            color: #993366;
+        }
+        .auto-style19 {
+            text-align: center;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <strong>
+        &nbsp;&nbsp;&nbsp;<table class="auto-style7">
+            <tr>
+                <td class="auto-style19">        <strong>
         <em>
         <asp:Label ID="Label3" runat="server" Text="Label" CssClass="auto-style18"></asp:Label>
         </em>
-        </strong>&nbsp;&nbsp;&nbsp;
-        <asp:DataList ID="DataList2" runat="server">
+        </strong></td>
+            </tr>
+            <tr>
+                <td class="auto-style19">
+                     <asp:Image ID="Image1" runat="server" Height="245px" Width="444px" ImageUrl='<%# Eval("YemekResim") %>' />
+                </td>
+            </tr>
+        </table>
+    <asp:DataList ID="DataList2" runat="server">
             <ItemTemplate>
                 <table class="auto-style7">
                     <tr>
@@ -70,7 +83,7 @@
             </ItemTemplate>
         </asp:DataList>
     <br />
-    <div class="auto-style10"><strong>BU TARİFE YORUM YAPIN</strong></div>
+    <div class="auto-style10"><strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; BU TARİFE YORUM YAPIN</strong></div>
     <asp:Panel ID="Panel1" runat="server">
         <table class="auto-style7">
             <tr>

@@ -28,6 +28,10 @@
             border-radius: 10px;
             background-color: #FFCC99;
         }
+        .auto-style18 {
+            margin-left: 80px;
+            text-align: left;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -56,9 +60,9 @@
                 </td>
             </tr>
             <tr>
-                <td class="auto-style12"><strong>Tarif Resim:</strong></td>
-                <td class="auto-style16">
-                    <asp:FileUpload ID="FileUpload1" runat="server" CssClass="tb5" Width="242px" />
+                <td class="auto-style12"><strong>Tarif Görsel:</strong> </td>
+                <td class="auto-style18">
+                    <asp:TextBox ID="TxtResim" runat="server" CssClass="tb5" Height="20px" Width="240px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
@@ -85,6 +89,10 @@
                 <td class="auto-style16"><strong><em>
                     <asp:Button ID="BtnOnayla" runat="server" BorderStyle="None" CssClass="auto-style17" Height="34px" OnClick="BtnOnayla_Click" style="font-weight: bold; font-size: medium; " Text="Onayla" Width="117px" />
                     </em></strong></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td class="auto-style16">&nbsp;</td>
             </tr>
         </table>
     </asp:Panel>

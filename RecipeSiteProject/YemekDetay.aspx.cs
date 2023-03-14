@@ -17,7 +17,7 @@ namespace RecipeSiteProject
             //YemekID'sine göre başlık getirme
 
             id = Request.QueryString["YemekID"];
-            SqlCommand komut=new SqlCommand("Select YemekAd from Yemek where YemekID=@p1",baglan.baglanti());
+            SqlCommand komut=new SqlCommand("Select YemekAd,YemekResim from Yemek where YemekID=@p1",baglan.baglanti());
             komut.Parameters.AddWithValue("@p1",Convert.ToInt32(id));
             SqlDataReader oku=komut.ExecuteReader();
             while(oku.Read())

@@ -50,6 +50,7 @@ namespace RecipeSiteProject
             komut.ExecuteNonQuery();
             baglan.baglanti().Close();
 
+
             //Yemeği ana sayfaya ekleme
             SqlCommand komut2 = new SqlCommand("insert into Yemek (YemekAd, YemekMalzeme, YemekTarif, KategoriID) values(@ad,@malzeme,@tarif,@kId)", baglan.baglanti());
             komut2.Parameters.AddWithValue("@ad",TxtTarif.Text);

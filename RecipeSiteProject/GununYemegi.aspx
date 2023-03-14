@@ -45,6 +45,9 @@
             width: 684px;
             text-align: center;
         }
+        .auto-style19 {
+            color: #FFFFFF;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -79,22 +82,18 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="auto-style17">&nbsp;</td>
-                    </tr>
-                    <tr>
                         <td class="auto-style17">
                             <table class="auto-style1">
                                 <tr>
-                                    <td class="auto-style11"><strong>Puan:</strong>&nbsp;<asp:Label ID="Label6" runat="server" Text='<%# Eval("YemekPuan") %>'></asp:Label>
+                                    <td class="auto-style11"><strong>Puan:</strong>&nbsp;<asp:Label ID="Label6" runat="server" Text='<%# Eval("YemekPuan") %>' CssClass="auto-style19"></asp:Label>
                                         &nbsp;&nbsp;&nbsp;</td>
-                                    <td><strong><em>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</em></strong></td>
                                 </tr>
                             </table>
                         </td>
                     </tr>
                     <tr>
                         <td class="auto-style17"><strong><em>Eklenme Tarihi: </em></strong>
-                            <asp:Label ID="Label7" runat="server" Text='<%# Eval("YemekTarih") %>'></asp:Label>
+                            <asp:Label ID="Label7" runat="server" Text='<%# Eval("YemekTarih") %>' CssClass="auto-style19"></asp:Label>
                         </td>
                     </tr>
                     <tr>

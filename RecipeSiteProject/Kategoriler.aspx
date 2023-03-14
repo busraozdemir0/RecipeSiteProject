@@ -118,16 +118,16 @@
             </td>
         </tr>
         <tr>
-            <td class="auto-style19"><strong>KATEGORİ İCON:</strong></td>
+            <td class="auto-style19">&nbsp;</td>
             <td class="auto-style14">
-                <asp:FileUpload ID="FileUpload1" runat="server" Height="26px" />
+                <strong><em>
+                <asp:Button ID="BtnEkle" runat="server" BorderStyle="None" CssClass="auto-style15" Height="31px" OnClick="BtnEkle_Click" Text="Ekle" Width="92px" />
+                </em></strong>
             </td>
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td class="auto-style14"><strong><em>
-                <asp:Button ID="BtnEkle" runat="server" CssClass="auto-style15" Text="Ekle" Width="83px" BorderStyle="None" Height="28px" OnClick="BtnEkle_Click" />
-                </em></strong></td>
+            <td class="auto-style14">&nbsp;</td>
         </tr>
     </table>
          </asp:Panel>

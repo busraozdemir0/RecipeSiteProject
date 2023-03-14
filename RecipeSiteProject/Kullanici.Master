@@ -31,6 +31,10 @@
 
         }
         
+        .auto-style6 {
+            text-align: right;
+        }
+        
         </style>
 </head>
 <body>
@@ -38,7 +42,9 @@
         <div style="width: 700px; height: 150px; margin-left:300px; background-color: #ce7171;">      
             <asp:Image ID="Image1" runat="server" Height="150px" ImageUrl="~/Resimler/header6.jpg" Width="700px" />
         </div>
-        <div style="margin-left:300px; width:700px; height:20px;"></div>
+        <div style="margin-left:300px; width:700px; height:20px;" class="auto-style6">
+            <a href="Giris.Aspx"><asp:Label ID="Label3" runat="server" Text="Admin Giriş"></asp:Label></a>
+           </div>
         <div style="margin-left:300px; background-color: #ffff;" class="auto-style5">
             <table class="auto-style1">
                 <tr>
@@ -50,7 +56,9 @@
                 </tr>
             </table>
         </div>
-        <div style="margin-left:300px; width:700px; height:20px;"></div>
+        <div style="margin-left:300px; width:700px; height:20px;">
+            <br />
+           </div>
         <div style="margin-left:300px; width:700px; height:auto;">
              <div style=" width:200px; float:left; height:auto;background-color:#ce7171;" >
                  <strong><span class="auto-style4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KATEGORİLER<br />

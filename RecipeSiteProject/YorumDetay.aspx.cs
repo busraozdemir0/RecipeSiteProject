@@ -42,7 +42,7 @@ namespace RecipeSiteProject
             komut.Parameters.AddWithValue("@yId",id);
             komut.ExecuteNonQuery();
             baglan.baglanti().Close();
-            Response.Write("<script> alert('Yorum Başarıyla Güncellendi.') </script>");
+            Response.Write("<script> alert('Yorum Başarıyla Onaylandı.') </script>");
         }
     }
 }

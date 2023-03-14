@@ -4,9 +4,6 @@
     .auto-style6 {
         width: 100%;
     }
-    .auto-style7 {
-        margin-left: 40px;
-    }
     .auto-style8 {
         text-align: right;
         color: #000000;
@@ -24,6 +21,17 @@
             width: 230px;
             background-color: #FFCC99;
         }
+        .auto-style12 {
+            text-align: left;
+        }
+        .auto-style13 {
+            margin-left: 40px;
+            text-align: center;
+        }
+        .auto-style14 {
+            margin-left: 40px;
+            text-align: left;
+        }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -37,33 +45,37 @@
     </tr>
     <tr>
         <td class="auto-style8"><strong>Adınız Soyadınız:</strong></td>
-        <td>
+        <td class="auto-style12">
             <asp:TextBox ID="TxtAdSoyad" runat="server" CssClass="tb5"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style8"><strong>Mail Adresiniz:&nbsp;</strong></td>
-        <td>
+        <td class="auto-style12">
             <asp:TextBox ID="TxtMail" runat="server" CssClass="tb5" TextMode="Email"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style8"><strong>Konu:</strong></td>
-        <td class="auto-style7">
+        <td class="auto-style14">
             <asp:TextBox ID="TxtKonu" runat="server" CssClass="tb5"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td class="auto-style8"><strong>Mesaj:</strong></td>
-        <td class="auto-style7">
+        <td class="auto-style14">
             <asp:TextBox ID="TxtMesaj" runat="server" CssClass="tb5" Height="150px" TextMode="MultiLine"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td>&nbsp;</td>
-        <td class="auto-style7"><strong>
+        <td class="auto-style14"><strong>
             <asp:Button ID="BtnGonder" runat="server" CssClass="auto-style11" Text="Gönder" Width="117px" BorderStyle="None" Height="34px" OnClick="BtnGonder_Click" style="font-size: large; font-weight: bold; " />
             </strong></td>
+    </tr>
+    <tr>
+        <td>&nbsp;</td>
+        <td class="auto-style13">&nbsp;</td>
     </tr>
 </table>
 </asp:Content>

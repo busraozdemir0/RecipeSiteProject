@@ -60,14 +60,14 @@
         <tr>
             <td class="auto-style3"><strong>KATEGORİ:</strong></td>
             <td>
-                <asp:DropDownList ID="DropDownList1" runat="server" Width="250px">
+                <asp:DropDownList ID="DropDownList1" runat="server" Width="250px" Height="26px">
                 </asp:DropDownList>
             </td>
         </tr>
         <tr>
             <td class="auto-style9"><strong><span class="auto-style10">YEMEK GÖRSEL:</span></strong> </td>
             <td class="auto-style7">
-                <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" />
+                <asp:FileUpload ID="FileUpload1" runat="server" Width="250px" Height="27px" />
             </td>
         </tr>
         <tr>
@@ -81,6 +81,10 @@
             <td class="auto-style7"><strong><em>
                 <asp:Button ID="BtnSec" runat="server" BorderStyle="None" CssClass="auto-style8" Height="33px" OnClick="BtnSec_Click" Text="Günün Yemeği Seç" Width="250px" />
                 </em></strong></td>
+        </tr>
+        <tr>
+            <td class="auto-style6">&nbsp;</td>
+            <td class="auto-style7">&nbsp;</td>
         </tr>
     </table>
 </asp:Content>
